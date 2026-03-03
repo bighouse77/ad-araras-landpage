@@ -1,0 +1,5 @@
+{
+  "name": "Igreja Viva",
+  "description": "Uma landing page acolhedora e moderna para a sua comunidade cristã.",
+  "requestFramePermissions": ["geolocation"]
+}
