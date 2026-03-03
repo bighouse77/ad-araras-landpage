@@ -329,7 +329,7 @@ const Footer = () => (
         <span className="font-serif text-xl font-semibold">Assembleia de Deus Ministério Araras</span>
       </div>
       <p className="text-sm mb-4">© {new Date().getFullYear()} Assembleia de Deus Ministério Araras. Todos os direitos reservados.</p>
-      <p className="text-xs italic">"Ide por todo o mundo e pregai o evangelho a toda criatura." - Marcos 16:15</p>
+      <p className="text-xs italic">"Ide or todo o mundo e pregai o evangelho a toda criatura." - Marcos 16:15</p>
     </div>
   </footer>
 );
