@@ -74,10 +74,10 @@ const Hero = () => (
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <span className="text-church-olive font-medium tracking-widest uppercase text-xs mb-4 block">Bem-vindo à nossa comunidade</span>
-        <h1 className="section-title mb-6">Um lugar para pertencer, crescer e amar.</h1>
+        <span className="text-church-olive font-medium tracking-widest uppercase text-xs mb-4 block">Bem-vindo à nossa igreja</span>
+        <h1 className="section-title mb-6">Um lugar para se edificar, crescer e amar.</h1>
         <p className="text-lg text-church-ink/70 mb-8 max-w-lg">
-          Somos uma família dedicada a seguir os ensinamentos de Jesus, servindo nossa cidade com amor e compaixão. Junte-se a nós nesta jornada de fé.
+          A Assembleia de Deus Ministério Araras é uma igreja dedicada ao ensino da sã doutrina de Cristo. Junte-se a nós para cultos inspiradores, ministérios ativos e uma família que cresce a cada dia.
         </p>
         <div className="flex flex-wrap gap-4">
           <button className="olive-button flex items-center gap-2">
@@ -97,23 +97,18 @@ const Hero = () => (
       >
         <div className="grid grid-cols-2 gap-4">
           <img 
-            src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?auto=format&fit=crop&q=80&w=600" 
+            src="./src/assets/img/joaoeneusa.jpeg" 
             alt="Igreja interior" 
             className="pill-image w-full h-[400px] object-cover"
             referrerPolicy="no-referrer"
           />
           <div className="flex flex-col gap-4 mt-12">
             <img 
-              src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=600" 
+              src="./src/assets/img/igreja.jpeg" 
               alt="Comunidade" 
               className="pill-image w-full h-[280px] object-cover"
               referrerPolicy="no-referrer"
             />
-            <div className="bg-church-olive/10 p-8 rounded-[32px] flex flex-col justify-center items-center text-center">
-              <Heart className="text-church-olive mb-2" />
-              <span className="font-serif text-2xl">+500</span>
-              <span className="text-xs uppercase tracking-wider opacity-60">Vidas Transformadas</span>
-            </div>
           </div>
         </div>
       </motion.div>
@@ -159,7 +154,7 @@ const AboutUs = () => (
         className="grid gap-4"
       >
         <img 
-          src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=400" 
+          src="./src/assets/img/igrejaexterno.jpeg" 
           alt="Comunidade Igreja Viva" 
           className="pill-image w-full h-[350px] object-cover rounded-[32px]"
           referrerPolicy="no-referrer"
@@ -195,9 +190,9 @@ const ServiceTimes = () => (
 
       <div className="grid md:grid-cols-3 gap-8">
         {[
-          { day: 'Domingo', time: '09:00 & 18:00', title: 'Celebração da Família', icon: <Users className="text-church-olive" /> },
-          { day: 'Quarta-feira', time: '19:30', title: 'Noite de Oração', icon: <Heart className="text-church-olive" /> },
-          { day: 'Sábado', time: '19:00', title: 'Culto de Jovens', icon: <Music className="text-church-olive" /> },
+          { day: 'Domingo', time: '19:00', title: 'Culto Evangelístico', icon: <Users className="text-church-olive" /> },
+          { day: 'Quarta-feira', time: '19:30', title: 'Culto de Ensino', icon: <Heart className="text-church-olive" /> },
+          { day: 'Sábado', time: '19:00', title: 'Culto Especial', icon: <Music className="text-church-olive" /> },
         ].map((service, i) => (
           <motion.div 
             key={i}
@@ -238,10 +233,10 @@ const Ministries = () => (
 
       <div className="grid md:grid-cols-4 gap-4">
         {[
-          { title: 'Crianças', img: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=400' },
-          { title: 'Música', img: 'https://images.unsplash.com/photo-1514525253361-bee8718a340b?auto=format&fit=crop&q=80&w=400' },
-          { title: 'Social', img: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80&w=400' },
-          { title: 'Ensino', img: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=400' },
+          { title: 'Crianças', img: './src/assets/img/criancas.png' },
+          { title: 'Música', img: './src/assets/img/banda.png' },
+          { title: 'Grupo de Jovens', img: './src/assets/img/jovens.png' },
+          { title: 'Grupo de Irmãs', img: './src/assets/img/irmas.jpeg' },
         ].map((m, i) => (
           <motion.div 
             key={i}
@@ -276,16 +271,7 @@ const Contact = () => (
             </div>
             <div>
               <h4 className="font-medium text-lg mb-1">Endereço</h4>
-              <p className="opacity-70">Av. da Esperança, 123 - Centro<br />São Paulo, SP</p>
-            </div>
-          </div>
-          <div className="flex gap-4">
-            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-              <Calendar />
-            </div>
-            <div>
-              <h4 className="font-medium text-lg mb-1">Próximos Eventos</h4>
-              <p className="opacity-70">Conferência de Mulheres - 15 de Março<br />Batismo nas Águas - 28 de Março</p>
+              <p className="opacity-70">Rua Agenor Joaquim dos Santos, 185 - Parque Dom Pedro<br />Araras, SP</p>
             </div>
           </div>
         </div>
